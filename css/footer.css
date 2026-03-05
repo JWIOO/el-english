@@ -1,0 +1,92 @@
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+  background: #0a0f1e;
+  color: rgba(255, 255, 255, 0.6);
+  padding: var(--space-5xl) 0 var(--space-2xl);
+}
+
+.footer-logo {
+  margin-bottom: var(--space-lg);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: var(--space-3xl);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: var(--space-2xl);
+}
+
+.footer-right { text-align: right; }
+
+.footer-phone {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-phone-sub {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-base);
+}
+
+.footer-links a:hover { color: white; }
+.footer-links a.highlight { color: var(--color-accent); font-weight: 700; }
+
+.footer-awards {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: flex-end;
+}
+
+.award-badge {
+  width: 60px; height: 60px;
+  border-radius: var(--radius-circle);
+  background: rgba(255, 255, 255, 0.08);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.footer-info p {
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.footer-info strong {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: var(--space-sm);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-lg);
+  font-size: var(--font-size-xs);
+  opacity: 0.5;
+}

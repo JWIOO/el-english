@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL 영어 - 메인</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========== POPUP ========== -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup">
+      <div class="popup-img">
+        <div>
+          <div class="popup-emoji">🌸</div>
+          <div class="popup-title">2026 봄학기</div>
+          <div class="popup-subtitle">EL영어 봄학기 등록 안내</div>
+        </div>
+      </div>
+      <div class="popup-bottom">
+        <label class="popup-check">
+          <input type="checkbox" id="popupNoShow">오늘 하루 보지 않기
+        </label>
+        <button class="popup-close" id="popupCloseBtn">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">LOGO</div>
+        <span class="logo-text">EL 영어학원</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <div class="nav-item">
+          <a href="#">EL영어</a>
+          <div class="nav-dropdown">
+            <a href="#">초등 Level System</a>
+            <a href="#">초등 Curriculum</a>
+            <a href="#">초등 Textbook</a>
+            <a href="#">중등 Ivy ON</a>
+            <a href="#">중등 5.0</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">LanGCon</a>
+          <div class="nav-dropdown">
+            <a href="#">Level System</a>
+            <a href="#">Curriculum</a>
+            <a href="#">Textbook</a>
+            <a href="#">Test</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">녹지원</a>
+          <div class="nav-dropdown">
+            <a href="#">Road Map</a>
+            <a href="#">학사운영</a>
+            <a href="#">4-Way English</a>
+            <a href="#">Curriculum</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">AI 모바일 러닝</a>
+          <div class="nav-dropdown">
+            <a href="#">MVA AI</a>
+            <a href="#">EL Readers AI</a>
+            <a href="#">Phonics Island</a>
+            <a href="#">LanGCon Island</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">입학 안내</a>
+          <div class="nav-dropdown">
+            <a href="#">입학 절차</a>
+            <a href="#">레벨테스트 소개</a>
+            <a href="#">레벨테스트 예약</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">What's New</a>
+          <div class="nav-dropdown">
+            <a href="#">매거진</a>
+            <a href="#">영어 글쓰기 대회</a>
+            <a href="#">시즌 이벤트</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-ghost">Sign Up</button>
+        <button class="btn-primary">Login</button>
+        <button class="mobile-toggle" id="mobileToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#">EL</a>
+      <a href="#">LanGCon</a>
+      <a href="#">녹지원</a>
+      <a href="#">AI 모바일 러닝</a>
+      <a href="#">입학 안내</a>
+      <a href="#">What's New</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide hero-slide--langcon">
+        <div class="hero-content">
+          <div class="hero-badge">예비 초 ~ 초6</div>
+          <h1 class="hero-title">영어로 생각하고,<br>영어로 말하는<br><span>EL 잉글리쉬</span></h1>
+          <p class="hero-desc">자연스러운 언어 습득 과정을 통해 영어로 생각하고 표현하는 능력을 키워주는 프로그램</p>
+          <a href="#" class="hero-cta">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"><span class="hero-emoji">📚</span></div>
+        </div>
+      </div>
+      <div class="hero-slide hero-slide--elementary">
+        <div class="hero-content">
+          <div class="hero-badge">초 1 ~ 초 6</div>
+          <h1 class="hero-title">유창성과 창의력을<br>동시에 키우는<br><span>EL 초등</span></h1>
+          <p class="hero-desc">Connected Learning으로 영어 유창성과 창의적 사고력을 동시에 성장시킵니다</p>
+          <a href="#" class="hero-cta">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"><span class="hero-emoji">🎓</span></div>
+        </div>
+      </div>
+      <div class="hero-slide hero-slide--ivyon">
+        <div class="hero-content">
+          <div class="hero-badge">예비 중 ~ 중 3</div>
+          <h1 class="hero-title">특목에서<br>아이비리그까지<br><span>EL 초중등 Ivy ON</span></h1>
+          <p class="hero-desc">체계적인 학습 시스템으로 특목고부터 아이비리그까지 꿈을 현실로 만들어 드립니다</p>
+          <a href="#" class="hero-cta">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"><span class="hero-emoji">🏆</span></div>
+        </div>
+      </div>
+      <div class="hero-slide hero-slide--nokjiwon">
+        <div class="hero-content">
+          <div class="hero-badge">초 4 ~ 중 3</div>
+          <h1 class="hero-title">최상위 1%<br>MASTER CLASS<br><span>녹지원</span></h1>
+          <p class="hero-desc">최상위 영어 실력을 갖춘 학생들을 위한 프리미엄 마스터 클래스 프로그램</p>
+          <a href="#" class="hero-cta">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"><span class="hero-emoji">⭐</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <button class="hero-dot active" data-slide="0"></button>
+      <button class="hero-dot" data-slide="1"></button>
+      <button class="hero-dot" data-slide="2"></button>
+      <button class="hero-dot" data-slide="3"></button>
+    </div>
+  </section>
+
+  <!-- ========== MAGAZINE ========== -->
+  <section class="section magazine">
+    <div class="section-inner">
+      <div class="magazine-row">
+        <div class="magazine-left fade-up">
+          <div class="magazine-label">EL English Magazine</div>
+          <h2 class="magazine-title">EL·랭콘의 다양한<br>소식과 학습 정보를 만나보세요.</h2>
+          <p class="magazine-subtitle">매달 업데이트 되는 EL 매거진에서 영어 학습 팁, 성공 사례, 캠퍼스 소식을 확인하세요.</p>
+          <a href="#" class="btn-outline">Detail View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="magazine-right fade-up delay-2">
+          <div class="magazine-cards">
+            <div class="magazine-card">
+              <div class="mc-icon">📰</div>
+              <div class="mc-title">Interview</div>
+              <div class="mc-desc">EL영어 인터뷰 시리즈</div>
+            </div>
+            <div class="magazine-card">
+              <div class="mc-icon">📱</div>
+              <div class="mc-title">ALMA 학부모 앱</div>
+              <div class="mc-desc">학부모 전용 관리 앱</div>
+            </div>
+            <div class="magazine-card">
+              <div class="mc-icon">🎉</div>
+              <div class="mc-title">Campus Event</div>
+              <div class="mc-desc">캠퍼스 이벤트 소식</div>
+            </div>
+            <div class="magazine-card">
+              <div class="mc-icon">📝</div>
+              <div class="mc-title">IBT · PBT</div>
+              <div class="mc-desc">테스트 안내</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEVEL TEST ========== -->
+  <section class="section leveltest">
+    <div class="section-inner">
+      <div class="leveltest-row">
+        <div class="leveltest-left fade-up">
+          <div class="lt-label">EL Level Test</div>
+          <h2 class="lt-title">Scientific<br>Level System</h2>
+          <p class="lt-since"><strong>2008년</strong>부터 누적된 수많은 학생들의 성적 데이터를 기반으로 한 공신력 있는 레벨테스트</p>
+          <a href="#" class="lt-btn">레벨테스트 예약 <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="leveltest-right fade-up delay-2">
+          <div class="level-chart">
+            <div class="chart-title">초등 · 중등 & 녹지원 Level System</div>
+            <div class="level-bars">
+              <div class="level-bar">
+                <div class="level-name">Phonics</div>
+                <div class="level-track"><div class="level-fill lv1">Phonics</div></div>
+              </div>
+              <div class="level-bar">
+                <div class="level-name">초급</div>
+                <div class="level-track"><div class="level-fill lv2">Beginner</div></div>
+              </div>
+              <div class="level-bar">
+                <div class="level-name">중급</div>
+                <div class="level-track"><div class="level-fill lv3">Intermediate</div></div>
+              </div>
+              <div class="level-bar">
+                <div class="level-name">고급</div>
+                <div class="level-track"><div class="level-fill lv4">Advanced</div></div>
+              </div>
+              <div class="level-bar">
+                <div class="level-name">최고급</div>
+                <div class="level-track"><div class="level-fill lv5">Master</div></div>
+              </div>
+              <div class="level-bar">
+                <div class="level-name">Native</div>
+                <div class="level-track"><div class="level-fill lv6">Native</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY EL ========== -->
+  <section class="section why-EL">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Why EL English?</div>
+        <h2 class="section-title">Connected Learning</h2>
+      </div>
+      <div class="why-cards">
+        <div class="why-card fade-up">
+          <div class="why-num">01</div>
+          <h3 class="why-card-title">주제 연계 학습</h3>
+          <p class="why-card-desc">하나의 주제를 다양한 관점에서 반복 학습하여 시너지 효과 극대화</p>
+        </div>
+        <div class="why-card fade-up delay-1">
+          <div class="why-num">02</div>
+          <h3 class="why-card-title">2주 학습 시스템</h3>
+          <p class="why-card-desc">첫째 주에는 내용을 이해하는 Input 학습, 둘째 주에는 생각을 표현하는 Output 학습으로 영어 유창성을 키우는 시스템</p>
+        </div>
+        <div class="why-card fade-up delay-2">
+          <div class="why-num">03</div>
+          <h3 class="why-card-title">On-Off 연계 학습</h3>
+          <p class="why-card-desc">수업시간에 학습한 내용을 온라인에서 Review 하는 On-Off 연계 학습</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONNECTED LEARNING ========== -->
+  <section class="section connected">
+    <div class="section-inner">
+      <div class="connected-visual fade-up">
+        <div class="cl-theme">
+          <div class="cl-theme-label">Theme</div>
+          <div class="cl-theme-word">Job · Vocabulary · Grammar</div>
+        </div>
+        <div class="cl-grid">
+          <div class="cl-item">
+            <div class="cl-item-icon">📖</div>
+            <div class="cl-item-label">Reading</div>
+            <div class="cl-item-sub">Jason's Job</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-item-icon">🎧</div>
+            <div class="cl-item-label">Listening</div>
+            <div class="cl-item-sub">All About Jobs</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-item-icon">📖</div>
+            <div class="cl-item-label">Reading</div>
+            <div class="cl-item-sub">My Father's Job</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-item-icon">✏️</div>
+            <div class="cl-item-label">Writing</div>
+            <div class="cl-item-sub">My Future Job</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MOBILE LEARNING ========== -->
+  <section class="section mobile-learning">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">AI Mobile Learning</div>
+        <h2 class="section-title">모바일 러닝</h2>
+      </div>
+      <div class="ml-grid">
+        <div class="ml-card fade-up">
+          <div class="ml-card-bg"><span class="ml-card-emoji">🔗</span></div>
+          <div class="ml-card-content">
+            <div class="ml-card-name">EL CL</div>
+            <div class="ml-card-desc">ON/OFF 연계학습으로 예습·복습</div>
+          </div>
+        </div>
+        <div class="ml-card fade-up delay-1">
+          <div class="ml-card-bg"><span class="ml-card-emoji">📊</span></div>
+          <div class="ml-card-content">
+            <div class="ml-card-name">유형학습</div>
+            <div class="ml-card-desc">1만개 이상의 수능 문제를 유형별로</div>
+          </div>
+        </div>
+        <div class="ml-card fade-up delay-2">
+          <div class="ml-card-bg"><span class="ml-card-emoji">📚</span></div>
+          <div class="ml-card-content">
+            <div class="ml-card-name">EL Readers</div>
+            <div class="ml-card-desc">레벨에 맞는 다양한 장르의 도서</div>
+          </div>
+        </div>
+        <div class="ml-card fade-up delay-1">
+          <div class="ml-card-bg"><span class="ml-card-emoji">📝</span></div>
+          <div class="ml-card-content">
+            <div class="ml-card-name">MVA 엠바</div>
+            <div class="ml-card-desc">내 손안에 단어장으로 어디서나 학습</div>
+          </div>
+        </div>
+        <div class="ml-card fade-up delay-2">
+          <div class="ml-card-bg"><span class="ml-card-emoji">🏝️</span></div>
+          <div class="ml-card-content">
+            <div class="ml-card-name">Phonics Island</div>
+            <div class="ml-card-desc">게임 방식으로 Phonics 익히기</div>
+          </div>
+        </div>
+        <div class="ml-card fade-up delay-3">
+          <div class="ml-card-bg"><span class="ml-card-emoji">🎮</span></div>
+          <div class="ml-card-content">
+            <div class="ml-card-name">LanGCon Island</div>
+            <div class="ml-card-desc">스토리 기반 게임으로 언어 습득</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS ========== -->
+  <section class="section news">
+    <div class="section-inner">
+      <div class="news-header">
+        <h2 class="section-title">더 많은 <em>소식</em>이 궁금해요!</h2>
+        <a href="#" class="btn-outline">Magazine <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="news-scroll">
+        <div class="news-card">
+          <div class="news-card-img">🎤</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">Interview</span>
+            <div class="news-card-title">EL Interview</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">📱</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">Programs</span>
+            <div class="news-card-title">ALMA 학부모 전용 앱</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">🎊</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">LanGCon News</span>
+            <div class="news-card-title">Campus Event</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">📋</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">Type of Tests</span>
+            <div class="news-card-title">IBT · PBT</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">🚌</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">AL BUS</span>
+            <div class="news-card-title">셔틀버스 승하차 알림</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">📖</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">Voca & Grammar</span>
+            <div class="news-card-title">MVA & 유형학습</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">💬</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">리얼후기</span>
+            <div class="news-card-title">EL 영어·랭콘 리얼후기</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img">💡</div>
+          <div class="news-card-body">
+            <span class="news-card-tag">Study Know-how</span>
+            <div class="news-card-title">초등영어 영문 꿀팁</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MANAGEMENT ========== -->
+  <section class="section management">
+    <div class="section-inner">
+      <div class="management-row">
+        <div class="management-left fade-up">
+          <div class="section-label section-label--orange">Thorough Management</div>
+          <h2 class="mgmt-title">"Thorough management,<br>definite results"</h2>
+          <p class="mgmt-desc">EL 영어의 관리는 왜 특별할까요? 수업부터 숙제까지 학원에서 원스톱! 철저한 관리로 학부모의 부담과 학생의 영어 실력을 모두 책임집니다.</p>
+        </div>
+        <div class="management-right fade-up delay-2">
+          <div class="mgmt-emoji">👩‍🏫</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEACHER ========== -->
+  <section class="section teacher">
+    <div class="section-inner">
+      <div class="teacher-row">
+        <div class="teacher-left fade-up">
+          <div class="teacher-quote">Teacher Training</div>
+          <h2 class="teacher-title">Never stop learning<br>to become <em>a better teacher</em></h2>
+        </div>
+        <div class="teacher-right fade-up delay-2">
+          <div class="teacher-items">
+            <div class="teacher-item">
+              <div class="ti-icon">🎯</div>
+              <div class="ti-name">Workshop</div>
+              <div class="ti-desc">주제별 워크샵으로 강점 공유, 약점 극복</div>
+            </div>
+            <div class="teacher-item">
+              <div class="ti-icon">💻</div>
+              <div class="ti-name">Zoom Training</div>
+              <div class="ti-desc">시간·장소 제약 없는 직원 교육</div>
+            </div>
+            <div class="teacher-item">
+              <div class="ti-icon">🤝</div>
+              <div class="ti-name">Conference</div>
+              <div class="ti-desc">정기 컨퍼런스를 통한 전 직원 대면 교육</div>
+            </div>
+            <div class="teacher-item">
+              <div class="ti-icon">🎬</div>
+              <div class="ti-name">AL-Tutor</div>
+              <div class="ti-desc">사내 인트라넷을 통한 다양한 교육 영상</div>
+            </div>
+            <div class="teacher-item">
+              <div class="ti-icon">📋</div>
+              <div class="ti-name">Daily Meeting</div>
+              <div class="ti-desc">꼼꼼한 학생 관리를 위한 데일리 미팅</div>
+            </div>
+            <div class="teacher-item">
+              <div class="ti-icon">👀</div>
+              <div class="ti-name">Cross-Observation</div>
+              <div class="ti-desc">청강과 피드백을 통한 강의력 강화</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HAPPY CAMPUS ========== -->
+  <section class="section happy">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Happy Campus Life</h2>
+      </div>
+      <div class="happy-grid">
+        <div class="happy-card fade-up">
+          <div class="happy-card-bg happy-card-bg--1">🎵</div>
+          <div class="happy-card-label">LanGCon Festival</div>
+        </div>
+        <div class="happy-card fade-up delay-1">
+          <div class="happy-card-bg happy-card-bg--2">🏅</div>
+          <div class="happy-card-label">Certificate Party</div>
+        </div>
+        <div class="happy-card fade-up delay-2">
+          <div class="happy-card-bg happy-card-bg--3">🎃</div>
+          <div class="happy-card-label">Halloween Day</div>
+        </div>
+        <div class="happy-card fade-up delay-3">
+          <div class="happy-card-bg happy-card-bg--4">🎄</div>
+          <div class="happy-card-label">Christmas</div>
+        </div>
+        <div class="happy-card fade-up delay-4">
+          <div class="happy-card-bg happy-card-bg--5">🎈</div>
+          <div class="happy-card-label">Children's Day</div>
+        </div>
+        <div class="happy-card fade-up delay-4">
+          <div class="happy-card-bg happy-card-bg--6">🐝</div>
+          <div class="happy-card-label">AL Bee Match</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUICK LINKS ========== -->
+  <section class="quick-links">
+    <div class="section-inner">
+      <div class="quick-inner">
+        <a href="#" class="quick-link">
+          <i class="fas fa-clipboard-check"></i>
+          <div>
+            <div class="quick-link-text">Level Test</div>
+            <div class="quick-link-sub">레벨테스트 예약</div>
+          </div>
+        </a>
+        <a href="#" class="quick-link">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <div class="quick-link-text">Campus Search</div>
+            <div class="quick-link-sub">캠퍼스 찾기</div>
+          </div>
+        </a>
+        <a href="#" class="quick-link">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <div class="quick-link-text">1577-0502</div>
+            <div class="quick-link-sub">평일 13:00~20:00</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="section-inner">
+      <div class="footer-top">
+        <div>
+          <a href="#" class="logo footer-logo">
+            <div class="logo-icon">A</div>
+            <span class="logo-text logo-text--white">EL</span>
+          </a>
+          <div class="footer-phone">1577-0502</div>
+          <div class="footer-phone-sub">평일 13:00~20:00 &nbsp;|&nbsp; 주말·공휴일 휴무</div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-links">
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">학칙</a>
+            <a href="#" class="highlight">개인정보처리방침</a>
+            <a href="#">채용정보</a>
+            <a href="#">가맹문의</a>
+          </div>
+          <div class="footer-awards">
+            <div class="award-badge">최고의<br>브랜드</div>
+            <div class="award-badge">소비자<br>선택</div>
+            <div class="award-badge">경영<br>대상</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p><strong>회사명</strong>㈜EL 영어교육 &nbsp;&nbsp;<strong>대표이사</strong>한다현</p>
+        <p><strong>사업자 등록번호</strong>129-81-60929</p>
+        <p><strong>본사주소</strong>경기도 성남시 분당구 운중로 118, 스타타워 6,7층</p>
+        <p><strong>이메일</strong>LCmaster@EL.co.kr</p>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © EL Corp. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="to-top" id="toTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/popup.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/hero-slider.js"></script>
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/back-to-top.js"></script>
+</body>
+</html>

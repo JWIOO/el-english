@@ -1,0 +1,83 @@
+/* ============================================
+   Responsive Breakpoints
+   - Tablet:  max-width 1024px
+   - Mobile:  max-width 640px
+   ============================================ */
+
+@media (max-width: 1024px) {
+  /* Header */
+  .nav { display: none; }
+  .mobile-toggle { display: block; }
+
+  /* Hero */
+  .hero-slide { height: 400px; }
+  .hero-title { font-size: var(--font-size-5xl); }
+  .hero-visual { display: none; }
+
+  /* Sections - stack layouts */
+  .magazine-row,
+  .leveltest-row,
+  .teacher-row,
+  .management-row {
+    flex-direction: column;
+  }
+
+  /* Grids */
+  .why-cards { grid-template-columns: 1fr; }
+  .ml-grid { grid-template-columns: repeat(2, 1fr); }
+  .happy-grid { grid-template-columns: repeat(3, 1fr); }
+  .cl-grid { grid-template-columns: repeat(2, 1fr); }
+  .teacher-items { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-height: 60px;
+    --space-section: 60px;
+    --side-padding: 16px;
+  }
+
+  /* Header */
+  .header-inner { height: var(--header-height); }
+  .btn-ghost { display: none; }
+  .logo-text { font-size: 18px; }
+  .logo-icon { width: 36px; height: 36px; font-size: 15px; }
+
+  /* Hero */
+  .hero { margin-top: var(--header-height); }
+  .hero-slide { height: 340px; }
+  .hero-content { padding: 0 var(--side-padding); }
+  .hero-title { font-size: 26px; }
+  .hero-desc { font-size: var(--font-size-base); }
+
+  /* Section titles */
+  .section-title { font-size: var(--font-size-4xl); }
+  .lt-title { font-size: var(--font-size-4xl); }
+
+  /* Grids → single column */
+  .magazine-cards { grid-template-columns: 1fr; }
+  .ml-grid { grid-template-columns: 1fr; }
+  .happy-grid { grid-template-columns: repeat(2, 1fr); }
+  .cl-grid { grid-template-columns: 1fr; }
+
+  /* News */
+  .news-card { flex: 0 0 260px; }
+  .news-header { flex-direction: column; gap: var(--space-lg); align-items: flex-start; }
+
+  /* Quick Links */
+  .quick-inner {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  /* Footer */
+  .footer-top { flex-direction: column; gap: var(--space-2xl); }
+  .footer-right { text-align: left; }
+  .footer-links { flex-wrap: wrap; gap: var(--space-md); }
+  .footer-awards { justify-content: flex-start; }
+  .footer-info { grid-template-columns: 1fr; }
+
+  /* Management */
+  .mgmt-emoji { font-size: 120px; }
+  .mgmt-title { font-size: var(--font-size-3xl); }
+}

@@ -1,0 +1,88 @@
+/* ============================================
+   Design Tokens / CSS Variables
+   - 색상, 폰트, 간격, 그림자, 반경 등
+   - 테마 변경 시 이 파일만 수정
+   ============================================ */
+
+:root {
+  /* ---- Brand Colors ---- */
+  --color-primary: #cb2929;
+  --color-primary-light: #2c5aa0;
+  --color-primary-dark: #0d1b3e;
+
+  /* ---- Accent Colors ---- */
+  --color-accent: #f5a623;
+  --color-accent-red: #e8443a;
+  --color-green: #4caf50;
+  --color-purple: #7c4dff;
+  --color-teal: #00bfa5;
+  --color-pink: #ff4081;
+
+  /* ---- Neutral Colors ---- */
+  --color-white: #ffffff;
+  --color-bg-light: #f8f9fc;
+  --color-bg-dark: #0d1b3e;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-muted: #999999;
+  --color-border: rgba(0, 0, 0, 0.06);
+
+  /* ---- Typography ---- */
+  --font-body: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Poppins', 'Noto Sans KR', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 15px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 28px;
+  --font-size-5xl: 32px;
+  --font-size-6xl: 36px;
+  --font-size-hero: 42px;
+
+  /* ---- Spacing ---- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 40px;
+  --space-5xl: 48px;
+  --space-section: 80px;
+
+  /* ---- Layout ---- */
+  --max-width: 1280px;
+  --header-height: 70px;
+  --side-padding: 24px;
+
+  /* ---- Borders ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 50px;
+  --radius-circle: 50%;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  /* ---- Transitions ---- */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Z-Index Scale ---- */
+  --z-dropdown: 100;
+  --z-header: 1000;
+  --z-modal: 2000;
+  --z-toast: 3000;
+}
