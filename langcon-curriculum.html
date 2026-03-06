@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL 영어 - LanGCon Curriculum</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/curriculum.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <div data-include="components/header.html"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="cur-hero">
+    <div class="section-inner">
+      <div class="cur-hero-badge">LanGCon Curriculum</div>
+      <h1 class="cur-hero-title">LanGCon 커리큘럼</h1>
+      <p class="cur-hero-desc">Theme Based Learning과 미국 현지 교과과정을 결합한 체계적인 커리큘럼으로, 단계별 영어 실력 성장을 이끕니다.</p>
+    </div>
+  </section>
+
+  <!-- ========== BASECAMP GROUP ========== -->
+  <section class="cur-group">
+    <div class="section-inner">
+      <div class="cur-group-header">
+        <div class="cur-group-badge cur-group-badge--basecamp">BASECAMP GROUP</div>
+        <h2 class="cur-group-title">Basecamp</h2>
+        <p class="cur-group-desc">Theme Based Learning을 통한 다양한 배경지식 습득. Phonics와 함께하는 동화와 논술로 영어의 기초를 탄탄하게 다집니다.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="cur-tabs" id="basecampTabs">
+        <button class="cur-tab tab--basecamp active" data-panel="bc-littlespark">Little Spark</button>
+        <button class="cur-tab tab--basecamp" data-panel="bc-flyingstart">Flying Start</button>
+        <button class="cur-tab tab--basecamp" data-panel="bc-littlestar">Little Star</button>
+        <button class="cur-tab tab--basecamp" data-panel="bc-alphabetstar">Alphabet Star</button>
+      </div>
+
+      <!-- Panel: Little Spark / Language Fun -->
+      <div class="cur-panel active" id="bc-littlespark">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Little Spark · Language Fun</div>
+          <p class="cur-panel-desc">문장 확장부터 창작 논술까지, 탄탄한 읽기·쓰기 기초를 완성하는 단계</p>
+          <div class="cur-level-chips">
+            <span class="cur-level-chip">Telescope</span>
+            <span class="cur-level-chip">Compass</span>
+            <span class="cur-level-chip">Atlas</span>
+          </div>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--phonics">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🔤</div>
+              <div>
+                <div class="cur-course-name">Phonics</div>
+                <div class="cur-course-name-sub">파닉스 심화</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">혼합자음/모음을 학습하고 문장을 확장하며, 어휘를 활용하고 단어를 확장합니다.</p>
+              <ul class="cur-course-list">
+                <li>Telescope: 혼합자음/모음 → 문장 확장</li>
+                <li>Compass: 어휘 활용 및 응용</li>
+                <li>Atlas: 단어 확장 학습</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--story">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📖</div>
+              <div>
+                <div class="cur-course-name">Story</div>
+                <div class="cur-course-name-sub">창작 논술</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">창작 논술을 포함한 유창한 읽기와 내용 이해를 통해 창의력을 향상시킵니다.</p>
+              <ul class="cur-course-list">
+                <li>유창한 읽기(Fluent Reading) 훈련</li>
+                <li>내용 이해력 향상</li>
+                <li>창작 논술을 통한 창의력 발달</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--sight">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">👀</div>
+              <div>
+                <div class="cur-course-name">Sight Words</div>
+                <div class="cur-course-name-sub">어휘 확장</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">어휘 의미를 확대하고 쓰기의 기본을 다지며 단어 사용을 연습합니다.</p>
+              <ul class="cur-course-list">
+                <li>어휘 의미 확대 학습</li>
+                <li>쓰기 기본기 훈련</li>
+                <li>실전 단어 사용 연습</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--sentence">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">✏️</div>
+              <div>
+                <div class="cur-course-name">Sentence Development</div>
+                <div class="cur-course-name-sub">문장 구조</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">영어 문장 구조를 이해하고 활용하는 능력을 기릅니다.</p>
+              <ul class="cur-course-list">
+                <li>영어 문장 구조 이해</li>
+                <li>패턴 기반 문장 만들기</li>
+                <li>완전한 문장 쓰기 연습</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Flying Start -->
+      <div class="cur-panel" id="bc-flyingstart">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Flying Start</div>
+          <p class="cur-panel-desc">정확한 발음과 배경지식 확장을 통해 본격적인 영어 학습의 기초를 다지는 단계</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--language">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🗣️</div>
+              <div>
+                <div class="cur-course-name">Language</div>
+                <div class="cur-course-name-sub">언어 기초</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">정확한 발음, Pattern Drill, Spelling과 완전문장 쓰기를 훈련합니다.</p>
+              <ul class="cur-course-list">
+                <li>정확한 발음 훈련</li>
+                <li>Pattern Drill을 통한 문장 반복</li>
+                <li>Spelling 및 완전문장 쓰기</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--contents">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🌍</div>
+              <div>
+                <div class="cur-course-name">Contents</div>
+                <div class="cur-course-name-sub">주제 학습</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">사회, 과학, 미술, 음악 등 다양한 주제를 통해 배경지식을 넓히고 전략적 읽기를 학습합니다.</p>
+              <ul class="cur-course-list">
+                <li>사회/과학/미술/음악 주제 배경지식 확장</li>
+                <li>Cause & Effect 읽기 전략</li>
+                <li>Problem & Solution 읽기 전략</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Little Star -->
+      <div class="cur-panel" id="bc-littlestar">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Little Star</div>
+          <p class="cur-panel-desc">단모음/장모음, 자음, 이중자음의 음가를 익히고 흥미로운 스토리로 학습하는 단계</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--phonics">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🔤</div>
+              <div>
+                <div class="cur-course-name">Phonics</div>
+                <div class="cur-course-name-sub">음가 학습</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">단모음과 장모음, 자음과 이중자음의 음가를 체계적으로 익힙니다.</p>
+              <ul class="cur-course-list">
+                <li>단모음/장모음 음가 학습</li>
+                <li>자음 및 이중자음 학습</li>
+                <li>음가 조합을 통한 읽기 연습</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--story">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📖</div>
+              <div>
+                <div class="cur-course-name">Contents</div>
+                <div class="cur-course-name-sub">스토리 학습</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">흥미로운 Story를 활용하여 자연스럽게 영어에 노출되고 학습합니다.</p>
+              <ul class="cur-course-list">
+                <li>흥미로운 Story 기반 학습</li>
+                <li>자연스러운 영어 노출</li>
+                <li>듣기와 읽기의 통합</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Alphabet Star -->
+      <div class="cur-panel" id="bc-alphabetstar">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Alphabet Star</div>
+          <p class="cur-panel-desc">대·소문자 및 음가, 단자음 기초학습과 Chant를 통한 응용학습</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--phonics">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🔤</div>
+              <div>
+                <div class="cur-course-name">Alphabet</div>
+                <div class="cur-course-name-sub">알파벳 기초</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">대문자와 소문자, 각 알파벳의 음가를 학습하고 단자음 기초를 다집니다.</p>
+              <ul class="cur-course-list">
+                <li>대·소문자 인식 및 쓰기</li>
+                <li>알파벳 음가 학습</li>
+                <li>단자음 기초 학습</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--contents">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🎵</div>
+              <div>
+                <div class="cur-course-name">Contents</div>
+                <div class="cur-course-name-sub">Chant 응용</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Chant(챈트)를 통해 알파벳과 음가를 재미있게 반복하고 응용합니다.</p>
+              <ul class="cur-course-list">
+                <li>Chant를 통한 반복 학습</li>
+                <li>리듬과 멜로디로 음가 기억</li>
+                <li>놀이 기반 응용 학습</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== COLUMBUS GROUP ========== -->
+  <section class="cur-group cur-group--alt">
+    <div class="section-inner">
+      <div class="cur-group-header">
+        <div class="cur-group-badge cur-group-badge--columbus">COLUMBUS GROUP</div>
+        <h2 class="cur-group-title">Columbus</h2>
+        <p class="cur-group-desc">언어를 통한 지식 학습이 본격적으로 시작되는 단계. 미국 현지 교과과정을 기반으로 통합적 사고력과 영어 실력을 동시에 키웁니다.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="cur-tabs" id="columbusTabs">
+        <button class="cur-tab tab--columbus active" data-panel="cb-santamaria">Santa Maria</button>
+        <button class="cur-tab tab--columbus" data-panel="cb-pinta">Pinta</button>
+        <button class="cur-tab tab--columbus" data-panel="cb-nina">Nina</button>
+        <button class="cur-tab tab--columbus" data-panel="cb-ocean">Ocean</button>
+        <button class="cur-tab tab--columbus" data-panel="cb-wave">Wave</button>
+      </div>
+
+      <!-- Panel: Santa Maria -->
+      <div class="cur-panel active" id="cb-santamaria">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Santa Maria</div>
+          <p class="cur-panel-desc">최상위 레벨. Newbery · Caldecott 수상작을 포함한 고급 텍스트와 심화 학습</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--reading">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📚</div>
+              <div>
+                <div class="cur-course-name">Storytown / Journeys</div>
+                <div class="cur-course-name-sub">미국 교과과정 기반</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">미국 현지 교과과정을 기반으로 한 고급 리딩. 소설, 수필, 기사, 전문 분야 글을 학습합니다.</p>
+              <ul class="cur-course-list">
+                <li>Newbery · Caldecott Honor 수상작 학습</li>
+                <li>소설, 수필, 기사, 전문 분야 글 읽기</li>
+                <li>비판적 분석과 심층 이해</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--language">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🎓</div>
+              <div>
+                <div class="cur-course-name">Language Arts</div>
+                <div class="cur-course-name-sub">6개 영역 통합</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Reading, Writing, Listening, Speaking, Grammar, Vocabulary 6개 영역 통합 학습</p>
+              <ul class="cur-course-list">
+                <li>Discussion & Debate</li>
+                <li>Presentation & Thinking Cap</li>
+                <li>Academic Writing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--social">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🌎</div>
+              <div>
+                <div class="cur-course-name">Social Studies</div>
+                <div class="cur-course-name-sub">사회 통합 학습</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Content Words와 Frequency Words를 구분하여 사회 과목을 영어로 학습합니다.</p>
+              <ul class="cur-course-list">
+                <li>내용어(Content Words) 학습</li>
+                <li>필수어(Frequency Words) 학습</li>
+                <li>Language, Math, Arts 연계 통합교육</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--science">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🔬</div>
+              <div>
+                <div class="cur-course-name">Science</div>
+                <div class="cur-course-name-sub">과학 통합 학습</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">과학적 사고 과정을 영어로 경험하며 학술적 영어 능력을 키웁니다.</p>
+              <ul class="cur-course-list">
+                <li>과학 개념의 영어 학습</li>
+                <li>실험 기반 체험 학습</li>
+                <li>보고서 작성 훈련</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--lab">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🧪</div>
+              <div>
+                <div class="cur-course-name">Science Labs</div>
+                <div class="cur-course-name-sub">실험 체험</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">이론적 지식을 실험으로 체험하는 프로세스 기반 학습</p>
+              <ul class="cur-course-list">
+                <li>배경지식 → 가설 수립</li>
+                <li>실험 → 관찰 → 결과 도출</li>
+                <li>실험 보고서 영어 작성</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--math">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🧮</div>
+              <div>
+                <div class="cur-course-name">Creative Math</div>
+                <div class="cur-course-name-sub">창의 수학</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Knowledge → Comprehension → Application 형식의 창의적 수학 학습</p>
+              <ul class="cur-course-list">
+                <li>추리 및 퍼즐 학습</li>
+                <li>논리 수학 문제 풀이</li>
+                <li>영어로 수학적 사고 표현</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Pinta -->
+      <div class="cur-panel" id="cb-pinta">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Pinta</div>
+          <p class="cur-panel-desc">고급 리딩과 통합 학습으로 학술적 영어 기반을 다지는 단계</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--reading">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📚</div>
+              <div>
+                <div class="cur-course-name">Storytown / Journeys</div>
+                <div class="cur-course-name-sub">미국 교과과정 기반</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">다양한 장르의 텍스트를 통해 읽기 전략과 이해력을 심화합니다.</p>
+              <ul class="cur-course-list">
+                <li>다양한 장르 텍스트 학습</li>
+                <li>읽기 전략 심화</li>
+                <li>주제별 배경지식 확장</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--language">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🎓</div>
+              <div>
+                <div class="cur-course-name">Language Arts</div>
+                <div class="cur-course-name-sub">통합 학습</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Speaking, Discussion, Writing 중심의 통합 언어 학습</p>
+              <ul class="cur-course-list">
+                <li>Speaking & Discussion</li>
+                <li>구조적 Writing 훈련</li>
+                <li>Grammar & Vocabulary 심화</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--social">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🌎</div>
+              <div>
+                <div class="cur-course-name">Social Studies / Science</div>
+                <div class="cur-course-name-sub">교과 통합</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">사회·과학 교과를 영어로 학습하며 학술적 어휘와 개념을 습득합니다.</p>
+              <ul class="cur-course-list">
+                <li>교과 어휘 학습</li>
+                <li>영어로 개념 이해 및 표현</li>
+                <li>통합 프로젝트 학습</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Nina -->
+      <div class="cur-panel" id="cb-nina">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Nina</div>
+          <p class="cur-panel-desc">읽기 유창성과 기초 학술 어휘를 확장하는 중급 단계</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--reading">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📚</div>
+              <div>
+                <div class="cur-course-name">Storytown / Journeys</div>
+                <div class="cur-course-name-sub">Navigation 기반</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Navigation 커리큘럼 기반의 체계적 읽기 학습</p>
+              <ul class="cur-course-list">
+                <li>체계적 읽기 전략 학습</li>
+                <li>유창한 읽기(Fluency) 훈련</li>
+                <li>어휘력 확장</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--language">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🎓</div>
+              <div>
+                <div class="cur-course-name">Language Arts</div>
+                <div class="cur-course-name-sub">언어 기술</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">기초 토론과 발표, 문법 학습을 통해 표현력을 키웁니다.</p>
+              <ul class="cur-course-list">
+                <li>기초 Discussion & Presentation</li>
+                <li>Grammar 체계 학습</li>
+                <li>Paragraph Writing 훈련</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Ocean -->
+      <div class="cur-panel" id="cb-ocean">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Ocean</div>
+          <p class="cur-panel-desc">Basecamp에서 Columbus로 전환되는 브릿지 단계</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--reading">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📚</div>
+              <div>
+                <div class="cur-course-name">Reading</div>
+                <div class="cur-course-name-sub">읽기 전환</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">스토리 기반 읽기에서 교과 기반 읽기로 전환하는 단계</p>
+              <ul class="cur-course-list">
+                <li>긴 지문 읽기 연습</li>
+                <li>독해 전략 기초 학습</li>
+                <li>다양한 글 유형 접하기</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--language">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🗣️</div>
+              <div>
+                <div class="cur-course-name">Language Arts</div>
+                <div class="cur-course-name-sub">기초 언어 기술</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">Speaking과 Writing의 기본기를 다지는 과정</p>
+              <ul class="cur-course-list">
+                <li>Speaking 기초 훈련</li>
+                <li>Sentence Writing 연습</li>
+                <li>기초 Grammar 학습</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Wave -->
+      <div class="cur-panel" id="cb-wave">
+        <div class="cur-panel-header">
+          <div class="cur-panel-title">Wave</div>
+          <p class="cur-panel-desc">Columbus 과정의 입문 단계, 본격적인 학술 학습을 위한 준비</p>
+        </div>
+        <div class="cur-courses">
+          <div class="cur-course course--reading">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">📚</div>
+              <div>
+                <div class="cur-course-name">Reading</div>
+                <div class="cur-course-name-sub">입문 읽기</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">짧은 지문 읽기부터 시작하여 체계적 읽기 습관을 형성합니다.</p>
+              <ul class="cur-course-list">
+                <li>짧은 지문 읽기 연습</li>
+                <li>핵심 어휘 학습</li>
+                <li>읽기 습관 형성</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cur-course course--language">
+            <div class="cur-course-top">
+              <div class="cur-course-icon">🗣️</div>
+              <div>
+                <div class="cur-course-name">Language</div>
+                <div class="cur-course-name-sub">기초 언어</div>
+              </div>
+            </div>
+            <div class="cur-course-body">
+              <p class="cur-course-desc">기초 문법과 어휘를 학습하고 간단한 문장 표현을 연습합니다.</p>
+              <ul class="cur-course-list">
+                <li>기초 문법 개념 학습</li>
+                <li>핵심 어휘 반복 훈련</li>
+                <li>간단한 문장 말하기·쓰기</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cur-cta">
+    <div class="section-inner">
+      <div class="cur-cta-title">우리 아이에게 맞는 커리큘럼이 궁금하신가요?</div>
+      <p class="cur-cta-desc">무료 레벨테스트로 정확한 레벨을 확인하고, 맞춤 커리큘럼을 시작하세요.</p>
+      <a href="#" class="btn-primary">레벨테스트 예약 <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <div data-include="components/footer.html"></div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="to-top" id="toTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/include.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/back-to-top.js"></script>
+
+  <!-- Tab Script -->
+  <script>
+    (function () {
+      document.querySelectorAll('.cur-tabs').forEach(function (tabGroup) {
+        var tabs = tabGroup.querySelectorAll('.cur-tab');
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            // Deactivate all tabs in this group
+            tabs.forEach(function (t) { t.classList.remove('active'); });
+            tab.classList.add('active');
+
+            // Show the matching panel
+            var section = tabGroup.closest('.cur-group');
+            section.querySelectorAll('.cur-panel').forEach(function (p) { p.classList.remove('active'); });
+            var target = document.getElementById(tab.getAttribute('data-panel'));
+            if (target) target.classList.add('active');
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -3,10 +3,12 @@
  * - 스크롤 시 .scrolled 클래스 토글
  * - 모바일 메뉴 토글
  */
-(function () {
-  const header = document.getElementById('header');
-  const mobileToggle = document.getElementById('mobileToggle');
-  const mobileNav = document.getElementById('mobileNav');
+function initHeader() {
+  var header = document.getElementById('header');
+  var mobileToggle = document.getElementById('mobileToggle');
+  var mobileNav = document.getElementById('mobileNav');
+
+  if (!header) return;
 
   // Scroll shadow
   function onScroll() {
@@ -18,12 +20,13 @@
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
   // Mobile menu toggle
   if (mobileToggle && mobileNav) {
     mobileToggle.addEventListener('click', function () {
       mobileNav.classList.toggle('open');
-      const icon = mobileToggle.querySelector('i');
+      var icon = mobileToggle.querySelector('i');
       if (mobileNav.classList.contains('open')) {
         icon.className = 'fas fa-times';
       } else {
@@ -39,4 +42,11 @@
       });
     });
   }
-})();
+}
+
+// 직접 로드된 경우 (include.js 없이) 바로 실행
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.getElementById('header')) {
+    initHeader();
+  }
+});

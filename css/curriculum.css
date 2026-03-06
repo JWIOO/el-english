@@ -1,0 +1,355 @@
+/* ============================================
+   LanGCon Curriculum Page Styles
+   ============================================ */
+
+/* ---- Hero ---- */
+.cur-hero {
+  padding: 140px 0 70px;
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #43a047 100%);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.cur-hero-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-xl);
+}
+
+.cur-hero-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero);
+  font-weight: 800;
+  margin-bottom: var(--space-lg);
+  letter-spacing: -1px;
+}
+
+.cur-hero-desc {
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- Group Section ---- */
+.cur-group {
+  padding: var(--space-section) 0;
+}
+
+.cur-group--alt {
+  background: var(--color-bg-light);
+}
+
+.cur-group-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cur-group-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-lg);
+}
+
+.cur-group-badge--basecamp {
+  background: rgba(255, 152, 0, 0.1);
+  color: #e65100;
+}
+
+.cur-group-badge--columbus {
+  background: rgba(33, 150, 243, 0.1);
+  color: #1565c0;
+}
+
+.cur-group-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-6xl);
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: -1px;
+  margin-bottom: var(--space-md);
+}
+
+.cur-group-desc {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- Level Tabs ---- */
+.cur-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: 40px;
+}
+
+.cur-tab {
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  background: var(--color-white);
+  color: var(--color-text-light);
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.cur-tab:hover {
+  border-color: var(--color-text-muted);
+  color: var(--color-text);
+}
+
+.cur-tab.active {
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+.cur-tab.active.tab--basecamp {
+  background: linear-gradient(135deg, #e65100, #ff9800);
+}
+
+.cur-tab.active.tab--columbus {
+  background: linear-gradient(135deg, #1565c0, #42a5f5);
+}
+
+/* ---- Tab Panel ---- */
+.cur-panel {
+  display: none;
+}
+
+.cur-panel.active {
+  display: block;
+}
+
+/* ---- Course Grid ---- */
+.cur-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-2xl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.cur-course {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+}
+
+.cur-course:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.cur-course-top {
+  padding: var(--space-2xl) var(--space-2xl) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.cur-course-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.cur-course-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.cur-course-name-sub {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.cur-course-body {
+  padding: 0 var(--space-2xl) var(--space-2xl);
+}
+
+.cur-course-desc {
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.cur-course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cur-course-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.cur-course-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+/* Course color themes */
+.course--phonics .cur-course-icon { background: #fff3e0; }
+.course--phonics .cur-course-list li::before { background: #ff9800; }
+
+.course--story .cur-course-icon { background: #e8f5e9; }
+.course--story .cur-course-list li::before { background: #4caf50; }
+
+.course--language .cur-course-icon { background: #e3f2fd; }
+.course--language .cur-course-list li::before { background: #2196f3; }
+
+.course--contents .cur-course-icon { background: #f3e5f5; }
+.course--contents .cur-course-list li::before { background: #9c27b0; }
+
+.course--sight .cur-course-icon { background: #fce4ec; }
+.course--sight .cur-course-list li::before { background: #e91e63; }
+
+.course--sentence .cur-course-icon { background: #e0f2f1; }
+.course--sentence .cur-course-list li::before { background: #009688; }
+
+.course--reading .cur-course-icon { background: #e8eaf6; }
+.course--reading .cur-course-list li::before { background: #3f51b5; }
+
+.course--science .cur-course-icon { background: #e8f5e9; }
+.course--science .cur-course-list li::before { background: #4caf50; }
+
+.course--social .cur-course-icon { background: #fff8e1; }
+.course--social .cur-course-list li::before { background: #ffc107; }
+
+.course--math .cur-course-icon { background: #fbe9e7; }
+.course--math .cur-course-list li::before { background: #ff5722; }
+
+.course--lab .cur-course-icon { background: #e0f7fa; }
+.course--lab .cur-course-list li::before { background: #00bcd4; }
+
+.course--arts .cur-course-icon { background: #fce4ec; }
+.course--arts .cur-course-list li::before { background: #e91e63; }
+
+/* ---- Level Chips in panel header ---- */
+.cur-panel-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.cur-panel-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.cur-panel-desc {
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.cur-level-chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.cur-level-chip {
+  padding: 4px 14px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  background: var(--color-bg-light);
+  color: var(--color-text);
+}
+
+/* ---- CTA ---- */
+.cur-cta {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.cur-cta-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.cur-cta-desc {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-2xl);
+}
+
+.cur-cta .btn-primary {
+  padding: 14px 36px;
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-full);
+  background: var(--color-white);
+  color: #1b5e20;
+}
+
+.cur-cta .btn-primary:hover {
+  background: #e8f5e9;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+  .cur-hero { padding: 100px 0 50px; }
+  .cur-hero-title { font-size: var(--font-size-5xl); }
+  .cur-courses { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .cur-hero { padding: 80px 0 40px; }
+  .cur-hero-title { font-size: 26px; }
+  .cur-hero-desc { font-size: var(--font-size-base); }
+  .cur-group-title { font-size: var(--font-size-4xl); }
+  .cur-courses { grid-template-columns: 1fr; }
+  .cur-tabs { gap: 6px; }
+  .cur-tab { padding: 8px 16px; font-size: var(--font-size-sm); }
+}
